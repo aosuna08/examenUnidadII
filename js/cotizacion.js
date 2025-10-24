@@ -15,6 +15,7 @@ const btnCalcular = document.getElementById("calcular")
 */
 
 function calcular() {
+    const mesesTexto = planCredito.options[planCredito.selectedIndex].text
     let pagoInicial = 0.0
     let total = 0.0
     let pagoMensual = 0.0
@@ -22,7 +23,7 @@ function calcular() {
     interes = parseFloat(planCredito.value) / 100
     pagoInicial = parseFloat(valorAuto.value) * enganche.value
     total = (parseFloat(valorAuto.value) - pagoInicial) + ((parseFloat(valorAuto.value) - pagoInicial) * interes)
-    pagoMensual = total / parseFloat(enganche.value)
+    pagoMensual = total / parseFloat(mesesTexto)
     txtPagoInicial.value = pagoInicial
     txtTotalAFinanciar.value = total
     txtPagoMensual.value = pagoMensual.toFixed(2)
