@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cotizacion </title>
+</head>
+<body>
+    <div class="tarjeta">
+        <p class="titulo"> Cotizacion </p>
+        <form action="#">
+            <label for="valorAuto"> Valor del automovil: </label>
+            <input type="number" id="valorAuto">
+            <label for="planCredito"> Planes de credito: </label>
+            <select id="planCredito">
+                <option value="12">12 meses</option>
+                <option value="18">18 meses</option>
+                <option value="24">24 meses</option>
+                <option value="36">36 meses</option>
+                <option value="48">48 meses</option>
+            </select><br>
+            <label for="enganche"> Enganche: </label>
+            <select id="enganche">
+                <option value="10">10%</option>
+                <option value="20">20%</option>
+                <option value="35">35%</option>
+                <option value="50">50%</option>
+                <option value="70">70%</option>
+            </select><br>
+            <label for="pagoInicial"> Pago inicial: </label>
+            <input type="number" id="pagoInicial"><br>
+            <label for="totalAFinanciar"> Total a Financiar: </label>
+            <input type="text" id="totalAfinanciar"><br>
+            <label for="pagoMensual"> Pago Mensual: </label>
+            <input type="number" id="pagoMensual"><br>
+            <hr>
+            <button type="button" id="calcular"> Calcular </button>
+            <button type="reset"> Limpiar </button>
+        </form>
+    </div>
+</body>
+</html>
